@@ -1,0 +1,40 @@
+str=input("enter a string;") #Question 1
+length=len(str)
+if(length<3):
+    print("Not a valid string")
+else:    
+    str1=str[0:2]+str[length-2:length]
+    print("desired string is:",str1)
+
+#Question 2
+str1=input("enter a string:")
+str2=input("enter second string:")
+a=len(str1)
+b=len(str2)
+str=str2[0]+str1[1:a]+" "+str1[0]+str2[1:b]
+print("resultant string is:",str)
+
+#Question 3
+str=input("enter your string:")
+length=len(str)
+b=str[length-3:length]
+if(length<3):
+    print("length should be greater than 3")
+else:
+    if(b=="ing"):
+        print("Your string is:",str[0:length]+"ly")
+    else:
+        print("Your string is:",str[0:length]+"ing")
+
+#Question 4
+str=input("enter a string:")
+length=len(str)
+if(len(str)==0):
+    print("enter a non empty string")
+else:
+    a=int(input("enter the index of character you want to remove:"))
+    str1=str[0:a]+str[a+1:length]
+    print("resulted string is:",str1)
+    
+
+
