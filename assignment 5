@@ -1,0 +1,23 @@
+#Question 1
+str="This is a beautiful morning. i am working with python"
+a=[word for word in str.split() if len(word)<4  ]
+print(a)
+
+#Question 2
+lst=["even" if i%2==0 else "odd" for i in range(20) ]
+print(lst)
+
+#Question 3
+lst=[i for i in range(1,1001) if i%7==0]
+print(lst)
+
+#Question 4
+str1="This is a beautiful morning. i am working with python"
+count=sum(1 for i in str1 if i==" ")
+print("total spaces in this string are:",count)
+
+#Question 5
+list_a=[1,2,3,4]
+list_b=[2,3,4,5]
+lst=[i for i in list_a for j in list_b if i==j]
+print("common elements are:",lst)

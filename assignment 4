@@ -1,0 +1,46 @@
+#Question 1
+l=[1,2,3,4,5,6,7,8,9,10]
+print("list is:",l)
+
+#Question 2
+lst=[1,10,100,3,6,8]
+lst.insert(3,59)
+print(lst)
+lst.append(5)
+print("resultant list is:",lst)
+print("length of this list:",len(lst))
+
+#Question 3
+lst=[11,12,13,14,15,16,17,18,19,20]
+print("Elements at even location:",lst[0:len(lst):2])
+
+#Question 4
+lst=["Gaurav",12,23,33.33,"Sharma",True]
+for i in lst:
+    if type(i)==str:
+        print(i)
+        
+#Question 5
+lst=["Gaurav",12,23,33.33,"Sharma",True]
+sum=0
+for i in lst:
+    if type(i)==int or type(i)==float:
+        sum=sum+i
+print("sum is:",sum)
+
+#Question 6
+lst=["komal","love","sakshi","simran","preeti"]
+a=input("enter another friend: ")
+lst.append(a)
+print("Your list is: ",lst)
+b=input("enter your most important friend:")
+ind=int(input("enter the index in which you want to insert:"))
+lst.insert(ind,b)
+print("Your list is:",lst)
+
+        
+
+
+
+
+    

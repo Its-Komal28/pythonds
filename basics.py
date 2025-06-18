@@ -90,7 +90,9 @@ for i in range(n):
         print("*",end=" ")
     for j in range(i,n-1):
         print("*",end=" ")
-    print()    
+    print()   
+str="komal"
+print(type(str)) 
     
   
       

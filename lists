@@ -1,0 +1,57 @@
+#append():adds an elements at the end of the list.
+lst=["komal","shina","love","love"]
+a=lst.append("yasmeen")
+lst.append([1,2,3])
+print(lst)
+print(a)
+#copy():returns the copy of a list
+lst1=lst.copy()
+print(lst1)
+#clear: removes all elements from the list.
+n=lst1.clear()
+print(lst1)
+print(n)
+#count():counts occurence of a value from the list.
+a=lst1.count("komal")
+print(a)
+#extend():we will extend list by adding elements from another list.
+b=lst.extend("komal") #returns none because it dont create another list(just makes changes in original list.)
+print(b)
+print(lst)
+lst.extend([1,2,3])
+print(lst)
+
+#### append only add element as it is.extend adds elements one, one at the end of list
+#@ apppend(): *adds a single element at the end of the list.*if the element is a list,it adds it as a single element(nested list).
+#@ extend(): *adds element from another iterable(like a list,tuple,or string) to the end of the list.**it unpacks the elements
+# and adds them individually.
+a=[1,2,3]
+a.append([4,5])
+print(a)            #takes exactly one argument.
+#index():Returns index of element.
+print(a.index(3))
+
+#insert():inserts an element at a particular position in list.
+a.insert(2,9)         #index,element.
+print(a)
+
+# pop():removes and returns the last element in the list.
+print(a.pop())
+print(a)
+
+#remove():removes the first occurence of a specified element from the list.
+a=[1,2,3,4,3]
+a.remove(3)
+print(a)
+
+#reverse():reverse the  order of elements in the list.
+a=[1,2,3,4,5]
+a.reverse()
+print(a)
+
+#sort():sorts the elements.
+a=[1,3,2,0]
+a.sort()
+print(a)
+
+
