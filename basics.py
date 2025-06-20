@@ -93,7 +93,12 @@ for i in range(n):
     print()   
 str="komal"
 print(type(str)) 
+a=[]
+a.append("hello")
+a.append(True)
+print(f"this is {a}")
     
+
   
       
 
