@@ -1,11 +1,9 @@
-import random
-secret=random.randint(1,100)
-num=int(input("try guessing the number: "))
-while True:
-    if num==secret:
-        print("You guessed the right number")
-    else:
-        if num<secret:
-            print("too low")
-        else:
-            print("too high")
+a=int(input("Enter an integer:"))
+if a==0:
+    print("The integer is zero")
+elif a-a==0:
+    print("it is a negative integer")
+else:
+    print("it is a positive integer")
+
+     

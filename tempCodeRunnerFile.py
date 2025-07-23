@@ -1,4 +1,2 @@
-a=[]
-a.append("hello")
-a.append(True)
-print(f"this is {a}")    
+else:
+            print("no movies saved")

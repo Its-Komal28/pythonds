@@ -1,0 +1,95 @@
+#Question 1
+dict={}
+a=int(input("how many items you want to add into dictionary:"))
+for i in range(a):
+    a=input("enter key:")
+    b=input("enter value:")
+    dict[a]=b
+print("dictionary is:",dict)
+
+#***********************************************************************************
+
+#Question 2
+employee_details={101:{"name":"komal","department":"manager","salary":100000},
+                  102:{"name":"love","department":"manager","salary":100000},
+                  103:{"name":"yasmeen","department":"HR","salary":75000},
+                  104:{"name":"bob","department":"IT","salary":45000}
+}
+high_sal=[employee_details[val]["name"] for val in employee_details if employee_details[val]["salary"]>50000]
+print(high_sal)
+
+#***********************************************************************************
+
+#Question 3
+import random
+secret=random.randint(1,100)
+num=int(input("try guessing the number: "))
+if num==secret:
+    print("You guessed the right number")
+else:
+    if num<secret:
+        print("too low")
+    else:
+        print("too high")
+        
+#**************************************************************************************
+
+#Question 4
+p=int(input("Enter the price of your product:$"))
+if p>1000:
+    n=p-(p*10)/100
+    print("Price after discount is: ",n)
+elif 500<p<1000:
+    n=p-(p*5)/100
+    print("price after applying discount is:",n)
+else:
+    print("no discount for this product")
+
+    
+#************************************************************************************
+
+#Question 6
+li=[20,30,40,[57,66,30,[70,80],"Hello"],50,True]
+li1=li[3]
+li2=li1[3]
+li2.insert(1,76)
+li1.insert(1,88)
+print(li1)
+el=li1[5]
+print(f"list after updation is:{li}")
+print("letter H from li:",el[0:1])
+
+#***********************************************************************************
+
+#Question 7
+print("Welcome to trip planner")
+print("Enter your budget")
+print("OPTIONS:5000-10000,10000-20000, 20000-30000, 30000-40000")
+budget=int(input("Enter your budget:"))
+print("your entered budget is:",budget)
+dict={(5000,10000):["Nepal","Sri lanka"],(10000,20000):["Thailand","Dubai"],
+      (20000,30000):["India","Australia","USA"],(30000,40000):["Canada","France","Japan"]}
+places = {
+        "Nepal": "Pashupatinath Temple",
+        "Sri Lanka": "Sigiriya Rock Fortress",
+        "Thailand": "Phi Phi Islands",
+        "Dubai": "Burj Khalifa",
+        "India": "Taj Mahal",
+        "Australia": "Sydney Opera House",
+        "USA": "Statue of Liberty",
+        "France": "Eiffel Tower",
+        "Japan": "Mount Fuji",
+        "Canada": "Niagara Falls"
+    }
+for (low,high),countries in dict.items():
+    if low<=budget<high :
+        print("countries under your selected budget are:")
+        for i in countries:
+            print(i)
+        c=input("choose any country among these:")
+        for j in places:
+            if j==c:
+                print(f"The place to visit in {c} is: {places[c]}")
+        
+        
+
